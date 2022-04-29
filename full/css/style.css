@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3d3d3d;
+    font-family: sans-serif;
+}
+ :root{
+    --text-color: rgb(8, 8, 8) ;
+    --menu-color: white;
+} 
+.container{
+    max-width: 1250px;
+    height:1044px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .header .icon{
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    left: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.container .header{
+    position: relative;
+}
+.container .header h1{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 30px;
+}
+.container .header ul{
+    display: flex;
+    position: absolute;
+    top: 35px;
+    left: 754px;
+}
+.container .header ul li{
+    list-style:none;
+    font-size: 20px;
+    margin-right: 60px;
+}
+
+.container .header ul a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.container .menu-bar{
+    display: none;
+    width: 100px;
+    height: 160px;
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    z-index: 2;
+}
+.container .menu-bar a{
+    text-decoration: none;
+    color: #fff;
+}
+.container .menu-bar .li1{
+    list-style-type: none;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+    color:white;
+}
+.container .menu-bar .li2{
+    list-style-type: none;
+    position: absolute;
+    top: 58px;
+    left: 25px;
+    color:white;
+}
+.container .menu-bar .li3{
+    list-style-type: none;
+    position: absolute;
+    top: 94px;
+    left: 25px;
+    color:white;
+}
+.container .menu-bar .li4{
+    list-style-type: none;
+    position: absolute;
+    top: 130px;
+    left: 25px;
+    color:white;
+}
+.container .div{
+    position: relative;
+}
+
+.container .div .div__img{
+    position: absolute;
+    top: 235px;
+    left: 480px;
+    text-align: center;
+}
+
+.container .div .div__img img{
+    border-radius: 50%;
+}
+
+
+
+.container .div .div__img h2{
+    margin-top: 10px;
+    font-size: 29px;
+}
+
+
+.container .div .text .text1{
+    position: absolute;
+    text-align: center;
+    width: 680px;
+    font-size: 60px;
+    top: 500px;
+    left: 310px;
+    font-weight: 900;
+}
+.container .the-end {
+    position: relative;
+    left: 205px;
+    top: 10px;
+}
+.container .the-end p{
+    width: 505px;
+    font-size: 27px;
+    position: absolute;
+    top: 765px; 
+    right: 567px;
+    text-align: center;
+
+}
+
+.container .the-end a{
+    position: absolute;
+    top: 918px;
+    right: 691px;
+    padding: 17px 21px;
+    background-color: black;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+@media (max-width:800px) {
+    body{
+        background-color: #fff;
+    }
+    .container{
+        width: 300px;
+        height: 200px;
+    }
+    .container .header h1{
+        left: 10px;
+        top: 9px;
+        font-size: 20px;
+    }
+    .container .header ul{
+        display: none;
+    }
+    .container .header .icon{
+        position: absolute;
+        top: 20px;
+        font-size: 25px;
+        left: 270px;
+        cursor: pointer;
+        display: block;
+    }
+    .container .div .div__img img{
+        width: 60px;
+        height: 60px;
+    }
+    .container .div .div__img{
+        top: 60px;
+        left: 70px;
+    }
+    .container .div .div__img h2{
+        font-size: 15px;
+    }
+    .container .div .text .text1{
+        top: 190px;
+        left: 40px;
+        font-weight: 700;
+        width: 230px;
+        font-size: 25px;
+    }
+    .container .the-end{
+        top: 0px;
+        left: 0px;
+    }
+    .container .the-end p{
+        top: 288px;
+        width: 180px;
+        left: 60px;
+        font-size: 15px;
+    }
+    .container .the-end a{
+        width: 100px;
+        top: 380px;
+        left: 110px;
+        padding: 7px 10px;
+        font-size:8px;
+    }
+}
+
+
